@@ -17,18 +17,19 @@ User registration status is tracked (Approved/Rejected)
 #### Postman screenshots of the results obtained from hitting POST / Signup endpoint.
 ![Screenshot (1080)](https://github.com/user-attachments/assets/7efab02a-7eaa-43a6-b355-d69e64181f7a)
 
-
 ### User Login:
 - Users can log in using their email and password.
 - JWT is used for authentication and provides a token for secure access.
 - **Endpoint**: `POST /api/login`
-#### Postman screenshots of the results obtained from hitting POST / login endpoint.
+#### Postman screenshots of the results obtained from hitting POST / login endpoint
+![Screenshot (1081)](https://github.com/user-attachments/assets/b4bbb871-c4fd-4b56-994c-305393a39079)
 
 ### Show User Data:
 - Users can retrieve their personal and financial details including purchase power, phone number, email, registration date, date of birth, and monthly salary.
 Data is returned in a readable HTML format.
 - **Endpoint**: `POST /api/user`
 #### Postman screenshots of the results obtained from hitting POST/user endpoint.
+![Screenshot (1082)](https://github.com/user-attachments/assets/cb474773-67ec-4bb8-bd2b-ddb334ca2685)
 
 ### Borrow Money
 - Loan Request: Users can borrow money by providing the loan amount and tenure.
@@ -37,7 +38,7 @@ Data is returned in a readable HTML format.
 - Rounded Values: The monthly repayment amount is rounded to two decimal places for precision.
 - **Endpoint**: `POST /api/borrow`
   #### Postman screenshots of the results obtained from hitting POST / borrow endpoint.
-
+![Screenshot (1084)](https://github.com/user-attachments/assets/1d5b7617-e363-41b7-91f5-bf0b40b8951c)
 
 
 
