@@ -28,7 +28,7 @@ router.post('/signup', async (req, res) => {
 // 2. Login API, Endpoint: POST /login.
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    //extract and find user mail and find it.
+    //extract and find user mail.
     //also we compare the provided password 
     //with the stored hashed password.
     const user = await User.findOne({ email });
@@ -51,7 +51,7 @@ const auth = (req, res, next) => {
     });
 };
 
-//3. show user data API, this route handles requests to retrieve user information
+//3. GET request. show user data API, this route handles requests to retrieve user information
 router.get('/user', auth, async (req, res) => {
     // we find the user by their unique id and exclude the password 
     const user = await User.findById(req.user.id).select('-password');
@@ -65,8 +65,8 @@ router.get('/user', auth, async (req, res) => {
         monthlySalary: user.monthlySalary
     });
 });
-// 4.  borrow money API, we take two parameters- 
-//loan amount as "amount and loan tenure as "tenure"
+// 4.  POST request borrow money API
+//we take two parameters- loan amount as "amount and loan tenure as "tenure"
 router.post('/borrow', auth, async (req, res) => {
     const { amount, tenure } = req.body;
     const interestRate = 0.08;
