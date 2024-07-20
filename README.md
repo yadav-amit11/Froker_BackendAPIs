@@ -28,7 +28,7 @@ Data is returned in a readable HTML format.
 - **Endpoint**: `POST /api/user`
 #### Postman screenshots of the results obtained from hitting POST/user endpoint.
 
-## Borrow Money
+### Borrow Money
 - Loan Request: Users can borrow money by providing the loan amount and tenure.
 - Purchasing Power Update: The API updates the user's purchasing power.
 - Monthly Repayment Calculation: Calculates the monthly EMI based on a fixed interest rate of 8% and the provided loan tenure.
