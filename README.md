@@ -15,6 +15,8 @@ bcryptjs
 User registration status is tracked (Approved/Rejected)
 - **Endpoint**: `POST /api/signup`
 #### Postman screenshots of the results obtained from hitting POST / Signup endpoint.
+![Screenshot (1080)](https://github.com/user-attachments/assets/7efab02a-7eaa-43a6-b355-d69e64181f7a)
+
 
 ### User Login:
 - Users can log in using their email and password.
